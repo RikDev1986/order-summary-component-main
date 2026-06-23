@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: "Red Hat Display", Sans-serif;
+    background: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    background-positon: top center;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    
+    
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    
+}
+
+.card__text {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    line-height: 1.8;
+}
+
+.card__plan {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    margin: 1.5rem;
+    align-items: center;
+    background-color: hsla(223, 47%, 23%, 3%);
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.card__plan::before {
+    content: url("images/icon-music.svg");
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    bottom: 0.8rem;
+    right: 1rem;
+}
+
+.card__plan-name {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.card__plan-price {
+    font-size: 0.8rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.card__plan-change {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: hsl(245, 75%, 52%);
+}
+
+.card__payment {
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin: 0 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0.8rem 1rem hsl(245, 75%, 52%, 20%)
+
+}
+
+.card__payment:active {
+    background-color: hsl(245, 79%, 64%);
+}
+
+.card__payment-cancel {
+    border: none;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    color: hsl(224, 23%, 55%, 75%);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+@media (min-width: 800px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+}
